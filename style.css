@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Figtree;
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format("truetype");
+  font-weight: 500 800;
+  font-style: normal;
+}
+
+
+.attribution { font-size: 0.6875rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: hsl(47, 88%, 63%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/*Card container*/
+.container{
+    width: 24.25rem;
+    height: auto;
+    padding: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1.25rem;
+    border: 0.0625rem solid hsl(0, 0%, 7%);
+    box-shadow: 0.5rem 0.5rem 0 hsl(0, 0%, 7%);
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/*Text content*/
+.content{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/*Article image*/
+#articleImage{
+    width: 100%;
+    height: auto;
+    border-radius: 0.625rem;
+}
+
+/*Category Learning*/
+#category{
+    display: inline-block;
+    background-color: hsl(47, 88%, 63%);
+    color: hsl(0, 0%, 7%);
+    font-family: Figtree;
+    font-size: clamp(0.75rem, 0.693rem + 0.244vw, 0.875rem);
+    font-weight: 800;
+    border: none;   
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.3125rem;
+    width: fit-content;
+}
+
+/*published date*/
+#date{
+    font-family: Figtree;
+    font-size: clamp(0.75rem, 0.693rem + 0.244vw, 0.875rem);
+    color: hsl(0, 0%, 7%);
+}
+
+/*Article title*/
+#articleTitle{
+    font-family: Figtree;
+    font-size: clamp(1.25rem, 1.193rem + 0.244vw, 1.5rem);
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+}
+
+#articleTitle:hover{
+    color: hsl(47, 89%, 63%);
+    cursor: pointer;
+}
+
+/*Article description*/
+.container p{
+    font-family: Figtree;
+    font-size: clamp(0.875rem, 0.775rem + 0.417vw, 1rem);
+    color: hsl(0, 0%, 42%);
+}
+
+/*Author section*/
+.author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/*Author avatar*/
+#authorAvatar{
+    width: 2rem;
+    height: 2rem;
+    display: block;
+}
+
+/*Author name*/
+#authorName{
+    font-family: Figtree;
+    font-size: 0.875rem;
+    color: hsl(0, 0%, 7%);
+    line-height: 1;
+    font-weight: 800;
+}
+
+/*Media query for mobile devices*/
+@media (max-width: 375px){
+    .container{
+        width: 20rem;
+        height: auto;
+    }
+
+    #articleImage{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
