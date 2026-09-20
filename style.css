@@ -1,3 +1,10 @@
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,10 +20,10 @@
 
 
 .attribution { font-size: 0.6875rem; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: var(--Gray-500); }
 
 body{
-    background-color: hsl(47, 88%, 63%);
+    background-color: var(--Yellow);
     display: grid;
     align-items: center;
     justify-content: center;
@@ -28,11 +35,11 @@ body{
     width: 24.25rem;
     height: auto;
     padding: 1.5rem;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--White);
     border-radius: 1.25rem;
-    border: 0.0625rem solid hsl(0, 0%, 7%);
-    box-shadow: 0.5rem 0.5rem 0 hsl(0, 0%, 7%);
-    margin-bottom: 1.5rem;
+    border: 0.0625rem solid var(--Gray-950);
+    box-shadow: 0.5rem 0.5rem 0 var(--Gray-950);
+    margin-block-end: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -40,25 +47,25 @@ body{
 
 /*Text content*/
 .content{
-    text-align: left;
+    text-align: start;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
 }
 
 /*Article image*/
-#articleImage{
+.articleImage{
     width: 100%;
     height: auto;
     border-radius: 0.625rem;
 }
 
 /*Category Learning*/
-#category{
+.category{
     display: inline-block;
-    background-color: hsl(47, 88%, 63%);
-    color: hsl(0, 0%, 7%);
-    font-family: Figtree;
+    background-color: var(--Yellow);
+    color: var(--Gray-950);
+    font-family: Figtree, sans-serif;
     font-size: clamp(0.75rem, 0.693rem + 0.244vw, 0.875rem);
     font-weight: 800;
     border: none;   
@@ -68,30 +75,30 @@ body{
 }
 
 /*published date*/
-#date{
-    font-family: Figtree;
+.date{
+    font-family: Figtree, sans-serif;
     font-size: clamp(0.75rem, 0.693rem + 0.244vw, 0.875rem);
-    color: hsl(0, 0%, 7%);
+    color: var(--Gray-500);
 }
 
 /*Article title*/
-#articleTitle{
-    font-family: Figtree;
+.articleTitle{
+    font-family: Figtree, sans-serif;
     font-size: clamp(1.25rem, 1.193rem + 0.244vw, 1.5rem);
     font-weight: 800;
-    color: hsl(0, 0%, 7%);
+    color: var(--Gray-950);
 }
 
-#articleTitle:hover{
-    color: hsl(47, 89%, 63%);
+.articleTitle:hover{
+    color: var(--Yellow);
     cursor: pointer;
 }
 
 /*Article description*/
 .container p{
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: clamp(0.875rem, 0.775rem + 0.417vw, 1rem);
-    color: hsl(0, 0%, 42%);
+    color: var(--Gray-500);
 }
 
 /*Author section*/
@@ -102,29 +109,29 @@ body{
 }
 
 /*Author avatar*/
-#authorAvatar{
+.authorAvatar{
     width: 2rem;
     height: 2rem;
     display: block;
 }
 
 /*Author name*/
-#authorName{
-    font-family: Figtree;
+.authorName{
+    font-family: Figtree, sans-serif;
     font-size: 0.875rem;
-    color: hsl(0, 0%, 7%);
+    color: var(--Gray-950);
     line-height: 1;
     font-weight: 800;
 }
 
 /*Media query for mobile devices*/
-@media (max-width: 375px){
+@media (max-width: 23.4375rem) {
     .container{
         width: 20rem;
         height: auto;
     }
 
-    #articleImage{
+    .articleImage{
         width: 100%;
         height: auto;
     }
